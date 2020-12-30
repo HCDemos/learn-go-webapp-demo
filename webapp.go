@@ -27,7 +27,7 @@ func HomePage(w http.ResponseWriter, r *http.Request) {
 		PageTitle: Title,
 	}
 
-	t, err := template.ParseFiles("index.html") //parse the html file index.html
+	t, err := template.ParseFiles("/home/terraform/go/bin/index.html") //parse the html file index.html
 	if err != nil {                             // if there is an error
 		log.Print("template parsing error: ", err) // log it
 	}
